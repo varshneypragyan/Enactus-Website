@@ -1,6 +1,5 @@
-var mongoose = require ("mongoose");
 
-var memberSchema  = new mongoose.Schema ({
+var memberSchema  = new MONGOOSE.Schema ({
     name: String,
     year: String,
     department : String,
@@ -8,4 +7,4 @@ var memberSchema  = new mongoose.Schema ({
 
 });
 
-module.exports = mongoose.model ("Member", memberSchema);
+module.exports = MONGOOSE.model ("Member", memberSchema);

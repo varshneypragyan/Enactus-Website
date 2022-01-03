@@ -1,6 +1,5 @@
-var mongoose = require ("mongoose");
 
-var projectSchema  = new mongoose.Schema ({
+var projectSchema  = new MONGOOSE.Schema ({
     name: String,
     descriptions:[{
         title: String,
@@ -8,4 +7,4 @@ var projectSchema  = new mongoose.Schema ({
     images: [{url: String}]
 });
 
-module.exports = mongoose.model ("Project", projectSchema);
+module.exports = MONGOOSE.model ("Project", projectSchema);
