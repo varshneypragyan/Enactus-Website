@@ -1,417 +1,1183 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <title>Enactus-MNNIT</title>
-  <!-- <meta content="width=device-width, initial-scale=1.0" name="viewport"> -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/ico" href="img/EnactusLogoHomepage.jpg">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <meta content="" name="keywords">
-  <meta content="" name="description">
-  <meta property="og:title" content="">
-  <meta property="og:image" content="">
-  <meta property="og:url" content="">
-  <meta property="og:site_name" content="">
-  <meta property="og:description" content="">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="">
-  <meta name="twitter:title" content="">
-  <meta name="twitter:description" content="">
-  <meta name="twitter:image" content="">
-  <link href="favicon.ico" rel="shortcut icon">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="lib/animate-css/animate.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Enactus-MNNIT</title>
+    <!-- <meta content="width=device-width, initial-scale=1.0" name="viewport"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/ico" href="img/EnactusLogoHomepage.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+    <meta property="og:title" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:image" content="" />
+    <link href="favicon.ico" rel="shortcut icon" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
+      rel="stylesheet"
+    />
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="lib/animate-css/animate.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
     <style>
-        .pic {
-            margin-bottom: 30px;
-            text-align: center;
-            overflow: hidden;
-            height: 260px;
-            max-width: 100%;
-            }
+      .pic {
+        margin-bottom: 30px;
+        text-align: center;
+        overflow: hidden;
+        height: 260px;
+        max-width: 100%;
+      }
 
+      /* Style the tab */
+      .tab {
+        overflow: hidden;
+        border: 0px;
+        border-bottom: 2px solid #03C4EB;
+        /* border: 1px solid #ccc; */
+        /* background-color: #f1f1f1; */
+      }
 
+      /* Style the buttons inside the tab */
+      .tab button {
+        background-color: transparent;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.1s ease-in-out;
+        font-size: 17px;
+        color: #111;
+      }
+
+      /* Change background color of buttons on hover */
+      .tab button:hover {
+        background-color: #ddd;
+      }
+
+      /* Create an active/current tablink class */
+      .tab button.active {
+        background-color: #03C4EB;
+        color: #fff;
+      }
+
+      /* Style the tab content */
+      .tabcontent {
+        display: none;
+        padding: 25px 0px;
+        border: 0px;
+        border-top: none;
+      }
     </style>
 
-  <!-- header -->
-  <header id="header">
-    <div class="container">
+    <!-- header -->
+    <header id="header">
+      <div class="container">
+        <div id="logo" class="pull-left">
+          <a href="index.html"
+            ><img src="img/enactusNavbarLogo.png" alt="" title=""
+          /></a>
+        </div>
 
-      <div id="logo" class="pull-left">
-        <a href="index.html"><img src="img/enactusNavbarLogo.png" alt="" title="" /></a>
-      </div>
-
-      <nav id="nav-menu-container">
-        <ul class="nav-menu">
+        <nav id="nav-menu-container">
+          <ul class="nav-menu">
             <li class="menu-active"><a href="index.html">Go Back</a></li>
-          <li class="menu-active"><a href="index.html">Home</a></li>
-          <li><a href="https://enactus.org/">Enactus Worldwide</a></li>
-        </ul>
-      </nav>
-      <!-- #nav-menu-container -->
-    </div>
-  </header>
-
-  <!----Team Info Section-->
-  <section id="portfolio">
-    <div class="container wow fadeInUp">
-      <div class="row">
-          <div class="col-md-12">
-              <h3 class="section-title">Our Team</h3>
-              <div class="section-title-divider"></div>
-
-              <div class="col-md-3">
-                  <a class="portfolio-item" style="background-image: url(img/TeamMembers/prajjwalSomvanshi.jpg);"></a>
-                  <div>
-                      <h4 style="text-align:center"><b>Prajjwal Somvanshi</b></h4>
-                      <h5 style="text-align:center"><i>Alumnus</i></h5>
-                  </div>
-              </div>
-
-              <div class="col-md-3">
-                  <a class="portfolio-item" style="background-image: url(img/TeamMembers/rashmiGupta.jpg);"></a>
-                  <div>
-                      <h4 style="text-align:center"><b>Rashmi Gupta</b></h4>
-                      <h5 style="text-align:center"><i>Alumna</i></h5>
-                  </div>
-              </div>
-
-              <div class="col-md-3">
-                  <a class="portfolio-item" style="background-image: url(img/TeamMembers/nabanitaBag.jpg);"></a>
-                  <div>
-                      <h4 style="text-align:center"><b>Nabanita Bag</b></h4>
-                      <h5 style="text-align:center"><i>Alumna</i></h5>
-                  </div>
-              </div>
-
-              <div class="col-md-3">
-                  <a class="portfolio-item" style="background-image: url(img/TeamMembers/PragyanVarshney.jpg);"></a>
-                  <div>
-                      <h4 style="text-align:center"><b>Kunal Jain</b></h4>
-                      <h5 style="text-align:center"><i>Alumnus</i></h5>
-                  </div>
-              </div>
-              <div class="col-md-3">
-                <a class="portfolio-item" style="background-image: url(img/TeamMembers/kunal.jpeg);"></a>
-                <div>
-                    <h4 style="text-align:center"><b>Pragyan Varshney</b></h4>
-                    <h5 style="text-align:center"><i>Alumnus</i></h5>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <a class="portfolio-item" style="background-image: url(img/TeamMembers/RahulParihar.jpg);"></a>
-                <div>
-                    <h4 style="text-align:center"><b>Rahul Parihar</b></h4>
-                    <h5 style="text-align:center"><i>Alumnus</i></h5>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <a class="portfolio-item" style="background-image: url(img/TeamMembers/GawthamVellore.jpg);"></a>
-                <div>
-                    <h4 style="text-align:center"><b>Gawtham Vellore</b></h4>
-                    <h5 style="text-align:center"><i>Alumnus</i></h5>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <a class="portfolio-item" style="background-image: url(img/TeamMembers/JigeshaYadav.jpg);"></a>
-                <div>
-                    <h4 style="text-align:center"><b>Jigesha Yadav</b></h4>
-                    <h5 style="text-align:center"><i>Alumnus</i></h5>
-                </div>
-            </div>
-
-
-              <div class="col-md-3">
-                  <a class="portfolio-item" style="background-image: url(img/TeamMembers/PrernaAgrawal.jpeg);"></a>
-                  <div>
-                      <h4 style="text-align:center"><b>Prerna Agrawal</b></h4>
-                      <h5 style="text-align:center"><i>Marketing and Sponsorship</i></h5>
-                      <h5 style="text-align:center"><i>Alumnus</i></h5>
-                  </div>
-              </div>
-
-              <div class="col-md-3">
-                <a class="portfolio-item" style="background-image: url(img/TeamMembers/BhuvanPurohit.jpeg);"></a>
-                <div>
-                    <h4 style="text-align:center"><b>Bhuvan Purohit</b></h4>
-                    <h5 style="text-align:center"><i>Field Officer</i></h5>
-                    <h5 style="text-align:center"><i>Alumnus</i></h5>
-                </div>
-            </div>
-
-
-              <div class="col-md-3">
-                  <a class="portfolio-item" style="background-image: url(img/TeamMembers/ShriyaSingh.jpg);"></a>
-                  <div>
-                      <h4 style="text-align:center"><b>Shriya Singh</b></h4>
-                      <h5 style="text-align:center"><i>Research and Development</i></h5>
-                      <h5 style="text-align:center"><i>Alumnus</i></h5>
-                  </div>
-              </div>
-
-              <div class="col-md-3">
-                  <a class="portfolio-item" style="background-image: url(img/TeamMembers/SnigdhaSharma.jpg);"></a>
-                  <div>
-                      <h4 style="text-align:center"><b>Snigdha Sharma</b></h4>
-                      <h5 style="text-align:center"><i>Marketing and Sponsorship</i></h5>
-                      <h5 style="text-align:center"><i>Alumnus</i></h5>
-                  </div>
-              </div>
-
-              <div class="col-md-3">
-                <a class="portfolio-item" style="background-image: url(img/TeamMembers/NeetuAgrawal.jpeg);"></a>
-                <div>
-                    <h4 style="text-align:center"><b>Neetu Agrawal</b></h4>
-                    <h5 style="text-align:center"><i>Web Team Head</i></h5>
-                    <h5 style="text-align:center"><i>Alumnus</i></h5>
-                </div>
-            </div>
-            
-            <div class="col-md-3">
-                <a class="portfolio-item" style="background-image: url(img/TeamMembers/ManavDivyeshShah.jpg);"></a>
-                <div>
-                    <h4 style="text-align:center"><b>Manav Divyesh Shah</b></h4>
-                    <h5 style="text-align:center"><i>Web Team</i></h5>
-                    <h5 style="text-align:center"><i>Alumnus</i></h5>
-                </div>
-            </div>
-
-              <div class="col-md-3">
-                  <a class="portfolio-item" style="background-image: url(img/TeamMembers/PrajwalSingh.jpg);"></a>
-                  <div>
-                      <h4 style="text-align:center"><b>Prajwal Singh</b></h4>
-                      <h5 style="text-align:center"><i>Field Officer</i></h5>
-                      <h5 style="text-align:center"><i>Alumnus</i></h5>
-                  </div>
-              </div>
-
-              <div class="col-md-3">
-                <a class="portfolio-item" style="background-image: url(img/TeamMembers/MihirLaddha.jpeg);"></a>
-                <div>
-                    <h4 style="text-align:center"><b>Mihir Laddha</b></h4>
-                    <h5 style="text-align:center"><i>Web Team</i></h5>
-                    <h5 style="text-align:center"><i>Alumnus</i></h5>
-                </div>
-            </div>
-
-              <div class="col-md-3">
-                  <a class="portfolio-item" style="background-image: url(img/TeamMembers/AdyaSharma.jpg);"></a>
-                  <div>
-                      <h4 style="text-align:center"><b>Adya Sharma</b></h4>
-                      <h5 style="text-align:center"><i>Content Head</i></h5>
-                      <h5 style="text-align:center"><i>Alumnus</i></h5>
-                  </div>
-              </div>
-
-              <div class="col-md-3">
-                <a class="portfolio-item" style="background-image: url(img/TeamMembers/SonalDev.jpg);"></a>
-                <div>
-                    <h4 style="text-align:center"><b>Sonal Dev</b></h4>
-                    <h5 style="text-align:center"><i>Research and Development</i></h5>
-                    <h5 style="text-align:center"><i>Alumnus</i></h5>
-                </div>
-            </div>
-
-              <div class="col-md-3">
-                  <a class="portfolio-item" style="background-image: url(img/TeamMembers/VishnuBatla.jpg);"></a>
-                  <div>
-                      <h4 style="text-align:center"><b>Vishnu Batla</b></h4>
-                      <h5 style="text-align:center"><i>Content Team Head</i></h5>
-                      <h5 style="text-align:center"><i>Final Year</i></h5>
-                  </div>
-              </div>
-
-              <div class="col-md-3">
-                <a class="portfolio-item" style="background-image: url(img/TeamMembers/ChiragGupta.jpeg);"></a>
-                <div>
-                    <h4 style="text-align:center"><b>Chirag Gupta</b></h4>
-                    <h5 style="text-align:center"><i>Web Team Head</i></h5>
-                    <h5 style="text-align:center"><i>Final Year</i></h5>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <a class="portfolio-item" style="background-image: url(img/TeamMembers/YashKhandewal.jpg);"></a>
-                <div>
-                    <h4 style="text-align:center"><b>Yash Khandelwal</b></h4>
-                    <h5 style="text-align:center"><i>Web Team</i></h5>
-                    <h5 style="text-align:center"><i>Final Year</i></h5>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <a class="portfolio-item" style="background-image: url(img/TeamMembers/DhruviAgrawal.jpg);"></a>
-                <div>
-                    <h4 style="text-align:center"><b>Dhruvi Agrawal</b></h4>
-                    <h5 style="text-align:center"><i>Field Officer</i></h5>
-                    <h5 style="text-align:center"><i>Final Year</i></h5>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <a class="portfolio-item" style="background-image: url(img/TeamMembers/SiddhiKasat.jpeg);"></a>
-                <div>
-                    <h4 style="text-align:center"><b>Siddhi Kasat</b></h4>
-                    <h5 style="text-align:center"><i>Field Officer</i></h5>
-                    <h5 style="text-align:center"><i>Final Year</i></h5>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <a class="portfolio-item" style="background-image: url(img/TeamMembers/AyushAman.jpeg);"></a>
-                <div>
-                    <h4 style="text-align:center"><b>Ayush Aman</b></h4>
-                    <h5 style="text-align:center"><i>Field Officer</i></h5>
-                    <h5 style="text-align:center"><i>Final Year</i></h5>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <a class="portfolio-item" style="background-image: url(img/TeamMembers/PranjaliGupta.jpg);"></a>
-                <div>
-                    <h4 style="text-align:center"><b>Pranjali Gupta</b></h4>
-                    <h5 style="text-align:center"><i>Field Officer Head</i></h5>
-                    <h5 style="text-align:center"><i>Final Year</i></h5>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <a class="portfolio-item" style="background-image: url(img/TeamMembers/AmartyaMani.jpeg);"></a>
-                <div>
-                    <h4 style="text-align:center"><b>Amartya Mani</b></h4>
-                    <h5 style="text-align:center"><i>Research and Development Head</i></h5>
-                    <h5 style="text-align:center"><i>Final Year</i></h5>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <a class="portfolio-item" style="background-image: url(img/TeamMembers/SaiThete.jpeg);"></a>
-                <div>
-                    <h4 style="text-align:center"><b>Sai Thete</b></h4>
-                    <h5 style="text-align:center"><i>Research and Development</i></h5>
-                    <h5 style="text-align:center"><i>Final Year</i></h5>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <a class="portfolio-item" style="background-image: url(img/TeamMembers/AnkitNeeraj.JPG);"></a>
-                <div>
-                    <h4 style="text-align:center"><b>Ankit Neeraj</b></h4>
-                    <h5 style="text-align:center"><i>Marketing and Sponsorship Head</i></h5>
-                    <h5 style="text-align:center"><i>Final Year</i></h5>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <a class="portfolio-item" style="background-image: url(img/TeamMembers/ShrutiMokhashi.jpeg);"></a>
-                <div>
-                    <h4 style="text-align:center"><b>Shruti Mokhashi</b></h4>
-                    <h5 style="text-align:center"><i>Content Team</i></h5>
-                    <h5 style="text-align:center"><i>Third Year</i></h5>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <a class="portfolio-item" style="background-image: url(img/TeamMembers/ShrutiTripathi.jpeg);"></a>
-                <div>
-                    <h4 style="text-align:center"><b>Shruti Tripathi</b></h4>
-                    <h5 style="text-align:center"><i>Content Team</i></h5>
-                    <h5 style="text-align:center"><i>Third Year</i></h5>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <a class="portfolio-item" style="background-image: url(img/TeamMembers/ShrutiMayank.JPG);"></a>
-                <div>
-                    <h4 style="text-align:center"><b>Shruti Mayank</b></h4>
-                    <h5 style="text-align:center"><i>Web Team</i></h5>
-                    <h5 style="text-align:center"><i>Third Year</i></h5>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <a class="portfolio-item" style="background-image: url(img/TeamMembers/HimanshuTripathi.jpeg);"></a>
-                <div>
-                    <h4 style="text-align:center"><b>Himanshu Tripathi</b></h4>
-                    <h5 style="text-align:center"><i>Web Team</i></h5>
-                    <h5 style="text-align:center"><i>Third Year</i></h5>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <a class="portfolio-item" style="background-image: url(img/TeamMembers/ShauryaRajSrivastava.jpg);"></a>
-                <div>
-                    <h4 style="text-align:center"><b>Shaurya Raj Srivastava</b></h4>
-                    <h5 style="text-align:center"><i>Web Team</i></h5>
-                    <h5 style="text-align:center"><i>Third Year</i></h5>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <a class="portfolio-item" style="background-image: url(img/TeamMembers/AniketShah.jpg);"></a>
-                <div>
-                    <h4 style="text-align:center"><b>Aniket Shah</b></h4>
-                    <h5 style="text-align:center"><i>Web Team</i></h5>
-                    <h5 style="text-align:center"><i>Third Year</i></h5>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <a class="portfolio-item" style="background-image: url(img/TeamMembers/ShakshamShukla.jpeg);"></a>
-                <div>
-                    <h4 style="text-align:center"><b>Saksham Shukla</b></h4>
-                    <h5 style="text-align:center"><i>Field Officer</i></h5>
-                    <h5 style="text-align:center"><i>Third Year</i></h5>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <a class="portfolio-item" style="background-image: url(img/TeamMembers/AnoushkaArya.jpg);"></a>
-                <div>
-                    <h4 style="text-align:center"><b>Anoushka Arya</b></h4>
-                    <h5 style="text-align:center"><i>Field Officer</i></h5>
-                    <h5 style="text-align:center"><i>Third Year</i></h5>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <a class="portfolio-item" style="background-image: url(img/TeamMembers/PrachiKesarwani.jpeg);"></a>
-                <div>
-                    <h4 style="text-align:center"><b>Prachi kesarwani</b></h4>
-                    <h5 style="text-align:center"><i>Research and Development</i></h5>
-                    <h5 style="text-align:center"><i>Third Year</i></h5>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <a class="portfolio-item" style="background-image: url(img/TeamMembers/ShashwatSingh.jpeg);"></a>
-                <div>
-                    <h4 style="text-align:center"><b>Shashwat Singh</b></h4>
-                    <h5 style="text-align:center"><i>Marketing and Sponsorship</i></h5>
-                    <h5 style="text-align:center"><i>Third Year</i></h5>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <a class="portfolio-item" style="background-image: url(img/TeamMembers/AyushGupta.jpeg);"></a>
-                <div>
-                    <h4 style="text-align:center"><b>Ayush Gupta</b></h4>
-                    <h5 style="text-align:center"><i>Marketing and Sponsorship</i></h5>
-                    <h5 style="text-align:center"><i>Third Year</i></h5>
-                </div>
-            </div>
-
-          </div> 
+            <li class="menu-active"><a href="index.html">Home</a></li>
+            <li><a href="https://enactus.org/">Enactus Worldwide</a></li>
+          </ul>
+        </nav>
+        <!-- #nav-menu-container -->
       </div>
-    </div>
-  </section>
-</body>
+    </header>
+
+    <!----Team Info Section-->
+    <section id="portfolio">
+      <div class="container wow fadeInUp">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="section-title">Our Team</h3>
+            <div class="section-title-divider"></div>
+
+            <div class="tab">
+              <button class="tablinks" onclick="openTeam(event, 'Present')" id="defaultOpen">
+                Present
+              </button>
+              <button class="tablinks" onclick="openTeam(event, 'Alumni')">
+                Alumni
+              </button>
+            </div>
+
+            <div id="Present" class="tabcontent">
+              <div class="col-md-3">
+                <a
+                  class="portfolio-item"
+                  style="background-image: url(img/TeamMembers/VishnuBatla.jpg)"
+                ></a>
+                <div>
+                  <h4 style="text-align: center"><b>Vishnu Batla</b></h4>
+                  <h5 style="text-align: center"><i>Content Team Head</i></h5>
+                  <h5 style="text-align: center"><i>Final Year</i></h5>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <a
+                  class="portfolio-item"
+                  style="
+                    background-image: url(img/TeamMembers/ChiragGupta.jpeg);
+                  "
+                ></a>
+                <div>
+                  <h4 style="text-align: center"><b>Chirag Gupta</b></h4>
+                  <h5 style="text-align: center"><i>Web Team Head</i></h5>
+                  <h5 style="text-align: center"><i>Final Year</i></h5>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <a
+                  class="portfolio-item"
+                  style="
+                    background-image: url(img/TeamMembers/YashKhandewal.jpg);
+                  "
+                ></a>
+                <div>
+                  <h4 style="text-align: center"><b>Yash Khandelwal</b></h4>
+                  <h5 style="text-align: center"><i>Web Team</i></h5>
+                  <h5 style="text-align: center"><i>Final Year</i></h5>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <a
+                  class="portfolio-item"
+                  style="
+                    background-image: url(img/TeamMembers/DhruviAgrawal.jpg);
+                  "
+                ></a>
+                <div>
+                  <h4 style="text-align: center"><b>Dhruvi Agrawal</b></h4>
+                  <h5 style="text-align: center"><i>Field Officer</i></h5>
+                  <h5 style="text-align: center"><i>Final Year</i></h5>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <a
+                  class="portfolio-item"
+                  style="
+                    background-image: url(img/TeamMembers/SiddhiKasat.jpeg);
+                  "
+                ></a>
+                <div>
+                  <h4 style="text-align: center"><b>Siddhi Kasat</b></h4>
+                  <h5 style="text-align: center"><i>Field Officer</i></h5>
+                  <h5 style="text-align: center"><i>Final Year</i></h5>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <a
+                  class="portfolio-item"
+                  style="background-image: url(img/TeamMembers/AyushAman.jpeg)"
+                ></a>
+                <div>
+                  <h4 style="text-align: center"><b>Ayush Aman</b></h4>
+                  <h5 style="text-align: center"><i>Field Officer</i></h5>
+                  <h5 style="text-align: center"><i>Final Year</i></h5>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <a
+                  class="portfolio-item"
+                  style="
+                    background-image: url(img/TeamMembers/PranjaliGupta.jpg);
+                  "
+                ></a>
+                <div>
+                  <h4 style="text-align: center"><b>Pranjali Gupta</b></h4>
+                  <h5 style="text-align: center"><i>Field Officer Head</i></h5>
+                  <h5 style="text-align: center"><i>Final Year</i></h5>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <a
+                  class="portfolio-item"
+                  style="
+                    background-image: url(img/TeamMembers/AmartyaMani.jpeg);
+                  "
+                ></a>
+                <div>
+                  <h4 style="text-align: center"><b>Amartya Mani</b></h4>
+                  <h5 style="text-align: center">
+                    <i>Research and Development Head</i>
+                  </h5>
+                  <h5 style="text-align: center"><i>Final Year</i></h5>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <a
+                  class="portfolio-item"
+                  style="background-image: url(img/TeamMembers/SaiThete.jpeg)"
+                ></a>
+                <div>
+                  <h4 style="text-align: center"><b>Sai Thete</b></h4>
+                  <h5 style="text-align: center">
+                    <i>Research and Development</i>
+                  </h5>
+                  <h5 style="text-align: center"><i>Final Year</i></h5>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <a
+                  class="portfolio-item"
+                  style="background-image: url(img/TeamMembers/AnkitNeeraj.JPG)"
+                ></a>
+                <div>
+                  <h4 style="text-align: center"><b>Ankit Neeraj</b></h4>
+                  <h5 style="text-align: center">
+                    <i>Marketing and Sponsorship Head</i>
+                  </h5>
+                  <h5 style="text-align: center"><i>Final Year</i></h5>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <a
+                  class="portfolio-item"
+                  style="
+                    background-image: url(img/TeamMembers/ShrutiMokhashi.jpeg);
+                  "
+                ></a>
+                <div>
+                  <h4 style="text-align: center"><b>Shruti Mokhashi</b></h4>
+                  <h5 style="text-align: center"><i>Content Team</i></h5>
+                  <h5 style="text-align: center"><i>Third Year</i></h5>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <a
+                  class="portfolio-item"
+                  style="
+                    background-image: url(img/TeamMembers/ShrutiTripathi.jpeg);
+                  "
+                ></a>
+                <div>
+                  <h4 style="text-align: center"><b>Shruti Tripathi</b></h4>
+                  <h5 style="text-align: center"><i>Content Team</i></h5>
+                  <h5 style="text-align: center"><i>Third Year</i></h5>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <a
+                  class="portfolio-item"
+                  style="
+                    background-image: url(img/TeamMembers/ShrutiMayank.JPG);
+                  "
+                ></a>
+                <div>
+                  <h4 style="text-align: center"><b>Shruti Mayank</b></h4>
+                  <h5 style="text-align: center"><i>Web Team</i></h5>
+                  <h5 style="text-align: center"><i>Third Year</i></h5>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <a
+                  class="portfolio-item"
+                  style="
+                    background-image: url(img/TeamMembers/HimanshuTripathi.jpeg);
+                  "
+                ></a>
+                <div>
+                  <h4 style="text-align: center"><b>Himanshu Tripathi</b></h4>
+                  <h5 style="text-align: center"><i>Web Team</i></h5>
+                  <h5 style="text-align: center"><i>Third Year</i></h5>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <a
+                  class="portfolio-item"
+                  style="
+                    background-image: url(img/TeamMembers/ShauryaRajSrivastava.jpg);
+                  "
+                ></a>
+                <div>
+                  <h4 style="text-align: center">
+                    <b>Shaurya Raj Srivastava</b>
+                  </h4>
+                  <h5 style="text-align: center"><i>Web Team</i></h5>
+                  <h5 style="text-align: center"><i>Third Year</i></h5>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <a
+                  class="portfolio-item"
+                  style="background-image: url(img/TeamMembers/AniketShah.jpg)"
+                ></a>
+                <div>
+                  <h4 style="text-align: center"><b>Aniket Shah</b></h4>
+                  <h5 style="text-align: center"><i>Web Team</i></h5>
+                  <h5 style="text-align: center"><i>Third Year</i></h5>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <a
+                  class="portfolio-item"
+                  style="
+                    background-image: url(img/TeamMembers/ShakshamShukla.jpeg);
+                  "
+                ></a>
+                <div>
+                  <h4 style="text-align: center"><b>Saksham Shukla</b></h4>
+                  <h5 style="text-align: center"><i>Field Officer</i></h5>
+                  <h5 style="text-align: center"><i>Third Year</i></h5>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <a
+                  class="portfolio-item"
+                  style="
+                    background-image: url(img/TeamMembers/AnoushkaArya.jpg);
+                  "
+                ></a>
+                <div>
+                  <h4 style="text-align: center"><b>Anoushka Arya</b></h4>
+                  <h5 style="text-align: center"><i>Field Officer</i></h5>
+                  <h5 style="text-align: center"><i>Third Year</i></h5>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <a
+                  class="portfolio-item"
+                  style="
+                    background-image: url(img/TeamMembers/PrachiKesarwani.jpeg);
+                  "
+                ></a>
+                <div>
+                  <h4 style="text-align: center"><b>Prachi kesarwani</b></h4>
+                  <h5 style="text-align: center">
+                    <i>Research and Development</i>
+                  </h5>
+                  <h5 style="text-align: center"><i>Third Year</i></h5>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <a
+                  class="portfolio-item"
+                  style="
+                    background-image: url(img/TeamMembers/ShashwatSingh.jpeg);
+                  "
+                ></a>
+                <div>
+                  <h4 style="text-align: center"><b>Shashwat Singh</b></h4>
+                  <h5 style="text-align: center">
+                    <i>Marketing and Sponsorship</i>
+                  </h5>
+                  <h5 style="text-align: center"><i>Third Year</i></h5>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <a
+                  class="portfolio-item"
+                  style="background-image: url(img/TeamMembers/AyushGupta.jpeg)"
+                ></a>
+                <div>
+                  <h4 style="text-align: center"><b>Ayush Gupta</b></h4>
+                  <h5 style="text-align: center">
+                    <i>Marketing and Sponsorship</i>
+                  </h5>
+                  <h5 style="text-align: center"><i>Third Year</i></h5>
+                </div>
+              </div>
+            </div>
+
+            <div id="Alumni" class="tabcontent">
+              <div class="col-md-3">
+                <a
+                  class="portfolio-item"
+                  style="
+                    background-image: url(img/TeamMembers/prajjwalSomvanshi.jpg);
+                  "
+                ></a>
+                <div>
+                  <h4 style="text-align: center"><b>Prajjwal Somvanshi</b></h4>
+                  <h5 style="text-align: center"><i>Alumnus</i></h5>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <a
+                  class="portfolio-item"
+                  style="background-image: url(img/TeamMembers/rashmiGupta.jpg)"
+                ></a>
+                <div>
+                  <h4 style="text-align: center"><b>Rashmi Gupta</b></h4>
+                  <h5 style="text-align: center"><i>Alumna</i></h5>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <a
+                  class="portfolio-item"
+                  style="background-image: url(img/TeamMembers/nabanitaBag.jpg)"
+                ></a>
+                <div>
+                  <h4 style="text-align: center"><b>Nabanita Bag</b></h4>
+                  <h5 style="text-align: center"><i>Alumna</i></h5>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <a
+                  class="portfolio-item"
+                  style="
+                    background-image: url(img/TeamMembers/PragyanVarshney.jpg);
+                  "
+                ></a>
+                <div>
+                  <h4 style="text-align: center"><b>Kunal Jain</b></h4>
+                  <h5 style="text-align: center"><i>Alumnus</i></h5>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <a
+                  class="portfolio-item"
+                  style="background-image: url(img/TeamMembers/kunal.jpeg)"
+                ></a>
+                <div>
+                  <h4 style="text-align: center"><b>Pragyan Varshney</b></h4>
+                  <h5 style="text-align: center"><i>Alumnus</i></h5>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <a
+                  class="portfolio-item"
+                  style="
+                    background-image: url(img/TeamMembers/RahulParihar.jpg);
+                  "
+                ></a>
+                <div>
+                  <h4 style="text-align: center"><b>Rahul Parihar</b></h4>
+                  <h5 style="text-align: center"><i>Alumnus</i></h5>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <a
+                  class="portfolio-item"
+                  style="
+                    background-image: url(img/TeamMembers/GawthamVellore.jpg);
+                  "
+                ></a>
+                <div>
+                  <h4 style="text-align: center"><b>Gawtham Vellore</b></h4>
+                  <h5 style="text-align: center"><i>Alumnus</i></h5>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <a
+                  class="portfolio-item"
+                  style="
+                    background-image: url(img/TeamMembers/JigeshaYadav.jpg);
+                  "
+                ></a>
+                <div>
+                  <h4 style="text-align: center"><b>Jigesha Yadav</b></h4>
+                  <h5 style="text-align: center"><i>Alumnus</i></h5>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <a
+                  class="portfolio-item"
+                  style="
+                    background-image: url(img/TeamMembers/PrernaAgrawal.jpeg);
+                  "
+                ></a>
+                <div>
+                  <h4 style="text-align: center"><b>Prerna Agrawal</b></h4>
+                  <h5 style="text-align: center">
+                    <i>Marketing and Sponsorship</i>
+                  </h5>
+                  <h5 style="text-align: center"><i>Alumnus</i></h5>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <a
+                  class="portfolio-item"
+                  style="
+                    background-image: url(img/TeamMembers/BhuvanPurohit.jpeg);
+                  "
+                ></a>
+                <div>
+                  <h4 style="text-align: center"><b>Bhuvan Purohit</b></h4>
+                  <h5 style="text-align: center"><i>Field Officer</i></h5>
+                  <h5 style="text-align: center"><i>Alumnus</i></h5>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <a
+                  class="portfolio-item"
+                  style="background-image: url(img/TeamMembers/ShriyaSingh.jpg)"
+                ></a>
+                <div>
+                  <h4 style="text-align: center"><b>Shriya Singh</b></h4>
+                  <h5 style="text-align: center">
+                    <i>Research and Development</i>
+                  </h5>
+                  <h5 style="text-align: center"><i>Alumnus</i></h5>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <a
+                  class="portfolio-item"
+                  style="
+                    background-image: url(img/TeamMembers/SnigdhaSharma.jpg);
+                  "
+                ></a>
+                <div>
+                  <h4 style="text-align: center"><b>Snigdha Sharma</b></h4>
+                  <h5 style="text-align: center">
+                    <i>Marketing and Sponsorship</i>
+                  </h5>
+                  <h5 style="text-align: center"><i>Alumnus</i></h5>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <a
+                  class="portfolio-item"
+                  style="
+                    background-image: url(img/TeamMembers/NeetuAgrawal.jpeg);
+                  "
+                ></a>
+                <div>
+                  <h4 style="text-align: center"><b>Neetu Agrawal</b></h4>
+                  <h5 style="text-align: center"><i>Web Team Head</i></h5>
+                  <h5 style="text-align: center"><i>Alumnus</i></h5>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <a
+                  class="portfolio-item"
+                  style="
+                    background-image: url(img/TeamMembers/ManavDivyeshShah.jpg);
+                  "
+                ></a>
+                <div>
+                  <h4 style="text-align: center"><b>Manav Divyesh Shah</b></h4>
+                  <h5 style="text-align: center"><i>Web Team</i></h5>
+                  <h5 style="text-align: center"><i>Alumnus</i></h5>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <a
+                  class="portfolio-item"
+                  style="
+                    background-image: url(img/TeamMembers/PrajwalSingh.jpg);
+                  "
+                ></a>
+                <div>
+                  <h4 style="text-align: center"><b>Prajwal Singh</b></h4>
+                  <h5 style="text-align: center"><i>Field Officer</i></h5>
+                  <h5 style="text-align: center"><i>Alumnus</i></h5>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <a
+                  class="portfolio-item"
+                  style="
+                    background-image: url(img/TeamMembers/MihirLaddha.jpeg);
+                  "
+                ></a>
+                <div>
+                  <h4 style="text-align: center"><b>Mihir Laddha</b></h4>
+                  <h5 style="text-align: center"><i>Web Team</i></h5>
+                  <h5 style="text-align: center"><i>Alumnus</i></h5>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <a
+                  class="portfolio-item"
+                  style="background-image: url(img/TeamMembers/AdyaSharma.jpg)"
+                ></a>
+                <div>
+                  <h4 style="text-align: center"><b>Adya Sharma</b></h4>
+                  <h5 style="text-align: center"><i>Content Head</i></h5>
+                  <h5 style="text-align: center"><i>Alumnus</i></h5>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <a
+                  class="portfolio-item"
+                  style="background-image: url(img/TeamMembers/SonalDev.jpg)"
+                ></a>
+                <div>
+                  <h4 style="text-align: center"><b>Sonal Dev</b></h4>
+                  <h5 style="text-align: center">
+                    <i>Research and Development</i>
+                  </h5>
+                  <h5 style="text-align: center"><i>Alumnus</i></h5>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="col-md-3">
+              <a
+                class="portfolio-item"
+                style="
+                  background-image: url(img/TeamMembers/prajjwalSomvanshi.jpg);
+                "
+              ></a>
+              <div>
+                <h4 style="text-align: center"><b>Prajjwal Somvanshi</b></h4>
+                <h5 style="text-align: center"><i>Alumnus</i></h5>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <a
+                class="portfolio-item"
+                style="background-image: url(img/TeamMembers/rashmiGupta.jpg)"
+              ></a>
+              <div>
+                <h4 style="text-align: center"><b>Rashmi Gupta</b></h4>
+                <h5 style="text-align: center"><i>Alumna</i></h5>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <a
+                class="portfolio-item"
+                style="background-image: url(img/TeamMembers/nabanitaBag.jpg)"
+              ></a>
+              <div>
+                <h4 style="text-align: center"><b>Nabanita Bag</b></h4>
+                <h5 style="text-align: center"><i>Alumna</i></h5>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <a
+                class="portfolio-item"
+                style="
+                  background-image: url(img/TeamMembers/PragyanVarshney.jpg);
+                "
+              ></a>
+              <div>
+                <h4 style="text-align: center"><b>Kunal Jain</b></h4>
+                <h5 style="text-align: center"><i>Alumnus</i></h5>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <a
+                class="portfolio-item"
+                style="background-image: url(img/TeamMembers/kunal.jpeg)"
+              ></a>
+              <div>
+                <h4 style="text-align: center"><b>Pragyan Varshney</b></h4>
+                <h5 style="text-align: center"><i>Alumnus</i></h5>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <a
+                class="portfolio-item"
+                style="background-image: url(img/TeamMembers/RahulParihar.jpg)"
+              ></a>
+              <div>
+                <h4 style="text-align: center"><b>Rahul Parihar</b></h4>
+                <h5 style="text-align: center"><i>Alumnus</i></h5>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <a
+                class="portfolio-item"
+                style="
+                  background-image: url(img/TeamMembers/GawthamVellore.jpg);
+                "
+              ></a>
+              <div>
+                <h4 style="text-align: center"><b>Gawtham Vellore</b></h4>
+                <h5 style="text-align: center"><i>Alumnus</i></h5>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <a
+                class="portfolio-item"
+                style="background-image: url(img/TeamMembers/JigeshaYadav.jpg)"
+              ></a>
+              <div>
+                <h4 style="text-align: center"><b>Jigesha Yadav</b></h4>
+                <h5 style="text-align: center"><i>Alumnus</i></h5>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <a
+                class="portfolio-item"
+                style="
+                  background-image: url(img/TeamMembers/PrernaAgrawal.jpeg);
+                "
+              ></a>
+              <div>
+                <h4 style="text-align: center"><b>Prerna Agrawal</b></h4>
+                <h5 style="text-align: center">
+                  <i>Marketing and Sponsorship</i>
+                </h5>
+                <h5 style="text-align: center"><i>Alumnus</i></h5>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <a
+                class="portfolio-item"
+                style="
+                  background-image: url(img/TeamMembers/BhuvanPurohit.jpeg);
+                "
+              ></a>
+              <div>
+                <h4 style="text-align: center"><b>Bhuvan Purohit</b></h4>
+                <h5 style="text-align: center"><i>Field Officer</i></h5>
+                <h5 style="text-align: center"><i>Alumnus</i></h5>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <a
+                class="portfolio-item"
+                style="background-image: url(img/TeamMembers/ShriyaSingh.jpg)"
+              ></a>
+              <div>
+                <h4 style="text-align: center"><b>Shriya Singh</b></h4>
+                <h5 style="text-align: center">
+                  <i>Research and Development</i>
+                </h5>
+                <h5 style="text-align: center"><i>Alumnus</i></h5>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <a
+                class="portfolio-item"
+                style="background-image: url(img/TeamMembers/SnigdhaSharma.jpg)"
+              ></a>
+              <div>
+                <h4 style="text-align: center"><b>Snigdha Sharma</b></h4>
+                <h5 style="text-align: center">
+                  <i>Marketing and Sponsorship</i>
+                </h5>
+                <h5 style="text-align: center"><i>Alumnus</i></h5>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <a
+                class="portfolio-item"
+                style="background-image: url(img/TeamMembers/NeetuAgrawal.jpeg)"
+              ></a>
+              <div>
+                <h4 style="text-align: center"><b>Neetu Agrawal</b></h4>
+                <h5 style="text-align: center"><i>Web Team Head</i></h5>
+                <h5 style="text-align: center"><i>Alumnus</i></h5>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <a
+                class="portfolio-item"
+                style="
+                  background-image: url(img/TeamMembers/ManavDivyeshShah.jpg);
+                "
+              ></a>
+              <div>
+                <h4 style="text-align: center"><b>Manav Divyesh Shah</b></h4>
+                <h5 style="text-align: center"><i>Web Team</i></h5>
+                <h5 style="text-align: center"><i>Alumnus</i></h5>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <a
+                class="portfolio-item"
+                style="background-image: url(img/TeamMembers/PrajwalSingh.jpg)"
+              ></a>
+              <div>
+                <h4 style="text-align: center"><b>Prajwal Singh</b></h4>
+                <h5 style="text-align: center"><i>Field Officer</i></h5>
+                <h5 style="text-align: center"><i>Alumnus</i></h5>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <a
+                class="portfolio-item"
+                style="background-image: url(img/TeamMembers/MihirLaddha.jpeg)"
+              ></a>
+              <div>
+                <h4 style="text-align: center"><b>Mihir Laddha</b></h4>
+                <h5 style="text-align: center"><i>Web Team</i></h5>
+                <h5 style="text-align: center"><i>Alumnus</i></h5>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <a
+                class="portfolio-item"
+                style="background-image: url(img/TeamMembers/AdyaSharma.jpg)"
+              ></a>
+              <div>
+                <h4 style="text-align: center"><b>Adya Sharma</b></h4>
+                <h5 style="text-align: center"><i>Content Head</i></h5>
+                <h5 style="text-align: center"><i>Alumnus</i></h5>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <a
+                class="portfolio-item"
+                style="background-image: url(img/TeamMembers/SonalDev.jpg)"
+              ></a>
+              <div>
+                <h4 style="text-align: center"><b>Sonal Dev</b></h4>
+                <h5 style="text-align: center">
+                  <i>Research and Development</i>
+                </h5>
+                <h5 style="text-align: center"><i>Alumnus</i></h5>
+              </div>
+            </div> -->
+
+            <!-- <div class="col-md-3">
+              <a
+                class="portfolio-item"
+                style="background-image: url(img/TeamMembers/VishnuBatla.jpg)"
+              ></a>
+              <div>
+                <h4 style="text-align: center"><b>Vishnu Batla</b></h4>
+                <h5 style="text-align: center"><i>Content Team Head</i></h5>
+                <h5 style="text-align: center"><i>Final Year</i></h5>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <a
+                class="portfolio-item"
+                style="background-image: url(img/TeamMembers/ChiragGupta.jpeg)"
+              ></a>
+              <div>
+                <h4 style="text-align: center"><b>Chirag Gupta</b></h4>
+                <h5 style="text-align: center"><i>Web Team Head</i></h5>
+                <h5 style="text-align: center"><i>Final Year</i></h5>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <a
+                class="portfolio-item"
+                style="background-image: url(img/TeamMembers/YashKhandewal.jpg)"
+              ></a>
+              <div>
+                <h4 style="text-align: center"><b>Yash Khandelwal</b></h4>
+                <h5 style="text-align: center"><i>Web Team</i></h5>
+                <h5 style="text-align: center"><i>Final Year</i></h5>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <a
+                class="portfolio-item"
+                style="background-image: url(img/TeamMembers/DhruviAgrawal.jpg)"
+              ></a>
+              <div>
+                <h4 style="text-align: center"><b>Dhruvi Agrawal</b></h4>
+                <h5 style="text-align: center"><i>Field Officer</i></h5>
+                <h5 style="text-align: center"><i>Final Year</i></h5>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <a
+                class="portfolio-item"
+                style="background-image: url(img/TeamMembers/SiddhiKasat.jpeg)"
+              ></a>
+              <div>
+                <h4 style="text-align: center"><b>Siddhi Kasat</b></h4>
+                <h5 style="text-align: center"><i>Field Officer</i></h5>
+                <h5 style="text-align: center"><i>Final Year</i></h5>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <a
+                class="portfolio-item"
+                style="background-image: url(img/TeamMembers/AyushAman.jpeg)"
+              ></a>
+              <div>
+                <h4 style="text-align: center"><b>Ayush Aman</b></h4>
+                <h5 style="text-align: center"><i>Field Officer</i></h5>
+                <h5 style="text-align: center"><i>Final Year</i></h5>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <a
+                class="portfolio-item"
+                style="background-image: url(img/TeamMembers/PranjaliGupta.jpg)"
+              ></a>
+              <div>
+                <h4 style="text-align: center"><b>Pranjali Gupta</b></h4>
+                <h5 style="text-align: center"><i>Field Officer Head</i></h5>
+                <h5 style="text-align: center"><i>Final Year</i></h5>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <a
+                class="portfolio-item"
+                style="background-image: url(img/TeamMembers/AmartyaMani.jpeg)"
+              ></a>
+              <div>
+                <h4 style="text-align: center"><b>Amartya Mani</b></h4>
+                <h5 style="text-align: center">
+                  <i>Research and Development Head</i>
+                </h5>
+                <h5 style="text-align: center"><i>Final Year</i></h5>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <a
+                class="portfolio-item"
+                style="background-image: url(img/TeamMembers/SaiThete.jpeg)"
+              ></a>
+              <div>
+                <h4 style="text-align: center"><b>Sai Thete</b></h4>
+                <h5 style="text-align: center">
+                  <i>Research and Development</i>
+                </h5>
+                <h5 style="text-align: center"><i>Final Year</i></h5>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <a
+                class="portfolio-item"
+                style="background-image: url(img/TeamMembers/AnkitNeeraj.JPG)"
+              ></a>
+              <div>
+                <h4 style="text-align: center"><b>Ankit Neeraj</b></h4>
+                <h5 style="text-align: center">
+                  <i>Marketing and Sponsorship Head</i>
+                </h5>
+                <h5 style="text-align: center"><i>Final Year</i></h5>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <a
+                class="portfolio-item"
+                style="
+                  background-image: url(img/TeamMembers/ShrutiMokhashi.jpeg);
+                "
+              ></a>
+              <div>
+                <h4 style="text-align: center"><b>Shruti Mokhashi</b></h4>
+                <h5 style="text-align: center"><i>Content Team</i></h5>
+                <h5 style="text-align: center"><i>Third Year</i></h5>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <a
+                class="portfolio-item"
+                style="
+                  background-image: url(img/TeamMembers/ShrutiTripathi.jpeg);
+                "
+              ></a>
+              <div>
+                <h4 style="text-align: center"><b>Shruti Tripathi</b></h4>
+                <h5 style="text-align: center"><i>Content Team</i></h5>
+                <h5 style="text-align: center"><i>Third Year</i></h5>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <a
+                class="portfolio-item"
+                style="background-image: url(img/TeamMembers/ShrutiMayank.JPG)"
+              ></a>
+              <div>
+                <h4 style="text-align: center"><b>Shruti Mayank</b></h4>
+                <h5 style="text-align: center"><i>Web Team</i></h5>
+                <h5 style="text-align: center"><i>Third Year</i></h5>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <a
+                class="portfolio-item"
+                style="
+                  background-image: url(img/TeamMembers/HimanshuTripathi.jpeg);
+                "
+              ></a>
+              <div>
+                <h4 style="text-align: center"><b>Himanshu Tripathi</b></h4>
+                <h5 style="text-align: center"><i>Web Team</i></h5>
+                <h5 style="text-align: center"><i>Third Year</i></h5>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <a
+                class="portfolio-item"
+                style="
+                  background-image: url(img/TeamMembers/ShauryaRajSrivastava.jpg);
+                "
+              ></a>
+              <div>
+                <h4 style="text-align: center">
+                  <b>Shaurya Raj Srivastava</b>
+                </h4>
+                <h5 style="text-align: center"><i>Web Team</i></h5>
+                <h5 style="text-align: center"><i>Third Year</i></h5>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <a
+                class="portfolio-item"
+                style="background-image: url(img/TeamMembers/AniketShah.jpg)"
+              ></a>
+              <div>
+                <h4 style="text-align: center"><b>Aniket Shah</b></h4>
+                <h5 style="text-align: center"><i>Web Team</i></h5>
+                <h5 style="text-align: center"><i>Third Year</i></h5>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <a
+                class="portfolio-item"
+                style="
+                  background-image: url(img/TeamMembers/ShakshamShukla.jpeg);
+                "
+              ></a>
+              <div>
+                <h4 style="text-align: center"><b>Saksham Shukla</b></h4>
+                <h5 style="text-align: center"><i>Field Officer</i></h5>
+                <h5 style="text-align: center"><i>Third Year</i></h5>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <a
+                class="portfolio-item"
+                style="background-image: url(img/TeamMembers/AnoushkaArya.jpg)"
+              ></a>
+              <div>
+                <h4 style="text-align: center"><b>Anoushka Arya</b></h4>
+                <h5 style="text-align: center"><i>Field Officer</i></h5>
+                <h5 style="text-align: center"><i>Third Year</i></h5>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <a
+                class="portfolio-item"
+                style="
+                  background-image: url(img/TeamMembers/PrachiKesarwani.jpeg);
+                "
+              ></a>
+              <div>
+                <h4 style="text-align: center"><b>Prachi kesarwani</b></h4>
+                <h5 style="text-align: center">
+                  <i>Research and Development</i>
+                </h5>
+                <h5 style="text-align: center"><i>Third Year</i></h5>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <a
+                class="portfolio-item"
+                style="
+                  background-image: url(img/TeamMembers/ShashwatSingh.jpeg);
+                "
+              ></a>
+              <div>
+                <h4 style="text-align: center"><b>Shashwat Singh</b></h4>
+                <h5 style="text-align: center">
+                  <i>Marketing and Sponsorship</i>
+                </h5>
+                <h5 style="text-align: center"><i>Third Year</i></h5>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <a
+                class="portfolio-item"
+                style="background-image: url(img/TeamMembers/AyushGupta.jpeg)"
+              ></a>
+              <div>
+                <h4 style="text-align: center"><b>Ayush Gupta</b></h4>
+                <h5 style="text-align: center">
+                  <i>Marketing and Sponsorship</i>
+                </h5>
+                <h5 style="text-align: center"><i>Third Year</i></h5>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      document.getElementById("defaultOpen").click();
+      function openTeam(evt, teamCat) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(teamCat).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+    </script>
+  </body>
 </html>
